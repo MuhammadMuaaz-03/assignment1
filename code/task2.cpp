@@ -4,13 +4,15 @@ void add(int x, int y)
 {
 	cout << x + y << endl;
 }
-void add(double x, double y)
+double add(double x, double y)
 {
-	cout << x + y << endl;
+	return  x + y;
 }
 int main()
 {
 	double a, b;
 	cout << "Enter 2 numbers: ";
 	cin >> a >> b;
+	double z = add(a, b);
+	cout << z;
 }
