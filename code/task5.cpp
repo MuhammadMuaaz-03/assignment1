@@ -33,7 +33,6 @@ int main()
 	{
 		cout << Stud1.sub[x].name << "  " << Stud1.sub[x].credithour << "           " << Stud1.sub[x].totalmarks << "         " << Stud1.sub[x].grade << endl;
 
-
 	}
 	/*gpa calculator*/
 	for (int i = 0; i < 5; i++)
