@@ -1,20 +1,22 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-struct time {
-	int hour;
-	int minute;
-	int second;
-	int totalsecs;
+struct Time
+{
+    int hours;
+    int minutes;
+    int seconds;
+    int totalSeconds;
 };
 int main()
 {
-	time t1;
-	t1.hour;
-	t1.minute;
-	t1.second;
-	cout << "Time : " << t1.hour << ":" << t1.minute << ":" << t1.second << endl;
 
-	t1.totalsecs = t1.hour * 3600 + t1.minute * 60 + t1.second;
-	cout << t1.totalsecs;
+    Time t1;
+    cout << "Enter hours, minutes and seconds: ";
+    cin >> t1.hours >> t1.minutes >> t1.seconds;
+    cout << t1.hours << ":" << t1.minutes << ":" << t1.seconds << endl;
 
+    t1.totalSeconds = t1.hours * 3600 + t1.minutes * 60 + t1.seconds;/*finding seconds*/
+
+    cout << "Total seconds: " << t1.totalSeconds << endl;
+    return 0;
 }
